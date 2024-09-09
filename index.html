@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホ・ゲーム時間チェッカー</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮📱 スマホ・ゲーム時間チェッカー 📱🎮</h1>
+        
+        <div class="explanation">
+            <h2>👀 使い方をチェック！</h2>
+            <ol>
+                <li>使ってるアプリやゲームを選ぼう！</li>
+                <li>1日どれくらい使っているか入れてみよう！</li>
+                <li>どれくらい大切かを◎○△×で選んでね！</li>
+                <li>目標の時間も決めてみよう！</li>
+                <li>下のグラフで自分の使い方を確認！</li>
+            </ol>
+        </div>
+
+        <div id="contentInputs"></div>
+        <button id="addContent" class="fab">
+            <i class="material-icons">add</i>
+            <span>アプリやゲームを追加する</span>
+        </button>
+
+        <div class="charts-container">
+            <canvas id="usageChart"></canvas>
+            <canvas id="proportionChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
